@@ -19,7 +19,7 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: "./indes.html",
+        template: "./index.html",
         title: "J.A.T.E",
       }),
       new InjectManifest({
@@ -37,9 +37,6 @@ module.exports = () => {
         theme_color: "#9966CB",
         start_url: "./",
         publicPath: "./",
-        stats: {
-          children: true,
-        },
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
